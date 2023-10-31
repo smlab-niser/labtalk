@@ -110,7 +110,7 @@ natural images to other domains like artwork.</small>
 
     		<li><strong>Rucha Bhalchandra Joshi</strong></li>
 <ul>
-<li>August 7th, 2023
+<li>August 28th, 2023
 <li><b>End-to-end object detection with Transformers</b>
 <li><small>
 We present a new method that views object detection as a
@@ -135,17 +135,127 @@ baselines. Training code and pretrained models are available at
 https://github.com/facebookresearch/detr</small>
 <li><a href="https://ai.meta.com/research/publications/end-to-end-object-detection-with-transformers/">Link</a>
 <li><a href="./2023/rucha.pdf">Slides</a>
-    		</ul>
+	</ul>
+
+    		<li><strong>Jyotirmaya Shivottam</strong>
+	<ul>
+<li>September 12th, 2023
+<li><b>Exploring Long-term (Time-)Series Forecasting (LTSF) using Echo
+State Networks (ESNs) and comparisons with Single-Layer Perceptron
+(SLP), MLP, LSTM and <emph>especially</emph> Attention-based methods.</b>
+<li><small>ESNs are a type of Recurrent Neural Networks that are designed
+to capture long-term dependencies in sequential, usually time-series,
+data. Training the model involves training only the readout layer of
+the network, while the internal weights are randomly initialized and
+kept fixed. This makes the training process very fast and efficient,
+enabling ESNs to be great online learners. The random initialization
+of the internal weights is done in such a way that the network has the
+so-called Echo State Property, which is responsible for the network's
+ability to capture long-term dependencies, even in chaotic data. ESNs have
+been shown to outperform all methods in LTSF, and are also much faster to
+train. However, they are not as popular as LSTMs or now, transformers,
+and are not as well-studied. In this talk, we will: 1. explore what <a
+href="http://www.scholarpedia.org/article/Echo_state_network">ESNs
+</a>are &amp; resources therein; 2. look at a recent ESN architecture - <a
+href="https://dl.acm.org/doi/abs/10.1016/j.asoc.2023.110021">HP-MRESN</a>
+3. compare them with LSTMs - several works & own experiments; 4. and,
+in particular, compare them with recent results for attention-based
+methods for LTSF.</small>
+<li><a href="https://arxiv.org/abs/2205.13504">Link</a>
+	</ul>
+
+    		<li><strong>Jyotirmaya Shivottam</strong></li>
+	<ul>
+<li>September 22nd, 2023</li>
+<li><b>Are Transformers Effective for Time Series Forecasting?</b>
+<li><small>In this talk, we will discuss the aforementioned paper from
+AAAI '23, which compares the effectiveness of transformer-based
+architectures to simple linear (NN) models and concludes that linear
+models outperform transformers in long-term time series forecasting
+tasks. They present a hypothesis as to why this is the case and
+provide a few suggestions for future work. We will discuss their
+experiments and results. We will also briefly go over a recent set of
+papers that use transformers, that have shown promising results in
+long-term time series forecasting, though with some major caveats. We
+will end with a discussion about a literature gap that exists in the
+domain of (long-term) time series forecasting, pertaining to the lack
+of comparison with ESN or even LSTM/GRU on these tasks.</small>
+<li><a href="https://arxiv.org/abs/2205.13504">Link</a>
+    </ul>
 
     		<li><strong>Annada Prasad Behera</strong></li>
-    		<ul>
-        		<li>September 4th, 2023</li>
-    		</ul>
-    		<li><strong>Jyotirmaya Shivottam</strong></li>
-    		<ul>
-        		<li>September 11th, 2023</li>
-    		</ul>
-		</ol>
+	<ul>
+<li>September 25th, 2023</li>
+<li><b>Implicit Neural Representations with Periodic Activation Functions</b>
+<li><small>Implicitly defined, continuous, differentiable signal
+representations parameterized by neural networks have emerged as a
+powerful paradigm, offering many possible benefits over conventional
+representations. However, current network architectures for such
+implicit neural representations are incapable of modeling signals with
+fine detail, and fail to represent a signal's spatial and temporal
+derivatives, despite the fact that these are essential to many
+physical signals defined implicitly as the solution to partial
+differential equations. We propose to leverage periodic activation
+functions for implicit neural representations and demonstrate that
+these networks, dubbed sinusoidal representation networks or SIRENs,
+are ideally suited for representing complex natural signals and their
+derivatives. We analyze SIREN activation statistics to propose a
+principled initialization scheme and demonstrate the representation of
+images, wavefields, video, sound, and their derivatives. Further, we
+show how SIRENs can be leveraged to solve challenging boundary value
+problems, such as particular Eikonal equations (yielding signed
+distance functions), the Poisson equation, and the Helmholtz and wave
+equations. Lastly, we combine SIRENs with hypernetworks to learn
+priors over the space of SIREN functions. </small>
+<li><a href="https://proceedings.neurips.cc/paper/2020/hash/53c04118df112c13a8c34b38343b9c10-Abstract.html">Link</a>
+	</ul>
+
+    		<li><strong>Rahul Vishwakarma</strong></li>
+	<ul>
+<li>October 17th, 2023</li>
+<li><b>Formal Mathematics Statement Curriculum Learning</b>
+<li><small>This paper explore the use of expert iteration in the
+context of language modeling applied to formal mathematics. And show
+that at same compute budget, expert iteration, which mean proof search
+interleaved with learning, dramatically outperforms proof search only.
+Authors also observe that when applied to a collection of formal
+statements of sufficiently varied difficulty, expert iteration is
+capable of finding and solving a curriculum of increasingly difficult
+problems, without the need for associated ground-truth proofs.</small>
+<li><a href="https://arxiv.org/pdf/2202.01344.pdf">Link</a>
+	</ul>
+
+        	<li><strong>Annada Prasad Behera</strong></li>
+	<ul>
+<li>November 3rd, 2023</li>
+<li><b>3D Gaussian Splatting for Real-Time Radiance Field Rendering</b>
+<li><small><p>Radiance Field methods have recently revolutionized
+novel-view synthesis of scenes captured with multiple photos or
+videos. However, achieving high visual quality still requires neural
+networks that are costly to train and render, while recent faster
+methods inevitably trade off speed for quality. For unbounded and
+complete scenes (rather than isolated objects) and 1080p resolution
+rendering, no current method can achieve real-time display rates.
+
+<p>We introduce three key elements that allow us to achieve
+state-of-the-art visual quality while maintaining competitive training
+times and importantly allow high-quality real-time (≥ 100 fps)
+novel-view synthesis at 1080p resolution.
+
+<p>First, starting from sparse points produced during camera calibration,
+we represent the scene with 3D Gaussians that preserve desirable
+properties of continuous volumetric radiance fields for scene
+optimization while avoiding unnecessary computation in empty space;
+Second, we perform interleaved optimization/density control of the 3D
+Gaussians, notably optimizing anisotropic covariance to achieve an
+accurate representation of the scene; Third, we develop a fast
+visibility-aware rendering algorithm that supports anisotropic
+splatting and both accelerates training and allows realtime rendering.
+We demonstrate state-of-the-art visual quality and real-time rendering
+on several established datasets.</small>
+<li><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">Link</a>
+
+</ol>
 		<h3>2022 - Paper Presentations</h3>
 		<ol>
 			<li>
