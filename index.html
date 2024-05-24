@@ -23,9 +23,140 @@
 		<br>
 		People: Annada Prasad Behera, Subhankar Mishra
 		<hr>
-		<h3>2023 Weekly Lab Talks at E2 from 0930-1030 every week.</h3>
-		<ol>
-    		<li><strong>Rucha Bhalchandra Joshi</strong></li>
+<h3>2024 Weekly Lab Talks at E2 from 1430-1530 every week.</h3>
+<ol><li><strong>Annada Prasad Behera</strong>
+<ul>
+<li> January 22nd, 2024
+<li><b>Nitty gritty details of the CUDA rasterizer used in Gaussian splatting.</b>
+<li><small>
+<p>This talk presents a detailed explanation for all
+the parts of the Gaussian splatting rasterizer and how the
+<code>cuda_rasterizer.cu</code> implements the theory behind
+the Gaussian splatting. Spherical harmonics for view dependent color,
+frustrum culling for the culling rasterizers in camera space, splatting
+the Gaussians from 3D to 2D screen space, rendering the pixles, tiling
+on GPU to improve performance, the covariance matrix and at the end most
+important of all, the backward pass that enables optimizing algorithms
+suck as Adam or SGD to optimize the Gaussians with respect to a given
+input image and produce novel views of the scene are discussed.
+</small>
+</ul>
+
+<ol><li><strong>Sagar Prakash Barad </strong>
+<ul>
+<li> February 2nd, 2024
+<li><b>Mamba: Linear-Time Sequence Modeling with Selective State Spaces</b>
+<li><small>
+<p>The talk will begin with a primer on the basics of selective
+state models, followed by an overview of the Mamba architecture. The
+presentation will cover the key aspects of the model such as the scanning
+operation, hardware-aware memory allocations, computations, and conclude
+with an examination of the results presented in the paper.</small>
+</ul>
+
+<li><strong>Rucha Bhalchandra Joshi</strong>
+<ul>
+<li> February 16th, 2024
+<li><b>Quaternion Graph Neural Networks</b>
+<li><small>
+<p>Recently, graph neural networks (GNNs) have become an important and
+active research direction in deep learning. It is worth noting that
+most of the existing GNN-based methods learn graph representations
+within the Euclidean vector space. Beyond the Euclidean space,
+learning representation and embeddings in hyper-complex space have
+also shown to be a promising and effective approach. To this end, we
+propose Quaternion Graph Neural Networks (QGNN) to learn graph
+representations within the Quaternion space. As demonstrated, the
+Quaternion space, a hyper-complex vector space, provides highly
+meaningful computations and analogical calculus through Hamilton
+product compared to the Euclidean and complex vector spaces. Our
+QGNN obtains state-of-the-art results on a range of benchmark
+datasets for graph classification and node classification. Besides,
+regarding knowledge graphs, our QGNN-based embedding model achieves
+state-of-the-art results on three new and challenging benchmark
+datasets for knowledge graph completion</small>
+<li> <a href="https://arxiv.org/abs/2008.05089">Link</a> </li>
+</ul>
+
+
+<li><strong>Jyothish Kumar J</strong>
+<ul>
+<li> April 5th, 2024
+<li><b>A stopwatch to measure the lap-time of Light, and other crazy
+methods of 3D perception. </b>
+<li><small>
+<p>Ever wondered how we are able to measure the Time-Of-Flight of
+light? Well light is the fastest thing around here, and to measure how
+much time it took for light to bounce back from distances as small as 10
+cm the stopwatch itself must be clicked twice, faster then the speed of
+light. So, clearly that's not how it's done. In this talk, we discuss
+how the simple principles of physics and electronics from High-school
+textbooks are utilized ingeniously to device contineous wave time of
+flight (CW-ToF). Principles of Pulsed ToF (DTof) , Frequency Modulated ToF
+(FMToF) will also be discussed for the sake of context establishment.
+If time permits, Other crazy machines used for 3D  perception (such as
+wiggle-stereoscopy etc.) will be discussed. </small>
+</ul>
+
+
+<li><strong>Aritra Mukhopadhaya</strong>
+<ul>
+<li> April 12th, 2024
+<li><b>KS-Lottery: Finding Certified Lottery Tickets for
+Multilingual Language Models</b>
+<li><small>
+<p>The lottery ticket hypothesis posits the existence of “winning
+tickets” within a randomly initialized neural network. Do winning
+tickets exist for LLMs in fine-tuning scenarios? How can we find such
+winning tickets? In this paper, we propose KS-Lottery, a method to
+identify a small subset of LLM parameters highly effective in multilingual
+fine-tuning. Our key idea is to use KolmogorovSmirnov Test to analyze
+the distribution shift of parameters before and after fine-tuning. We
+further theoretically prove that KS-Lottery can find the certified winning
+tickets in the embedding layer, fine-tuning on the found parameters is
+guaranteed to perform as well as full fine-tuning. Comparing KS-Lottery
+with other parameter-efficient tuning algorithms on translation tasks,
+the experimental results show that KS-Lottery finds a much smaller set of
+parameters for fine-tuning while achieving the comparable performance as
+full finetuning LLM. Surprisingly, we find that fine-tuning 18 tokens’
+embedding of LLaMA suffices to reach the fine-tuning translation
+performance.</small>
+</ul>
+
+<li><strong>Rahul Vishwakarma</strong>
+<ul>
+<li> April 19th, 2024
+<li><b>Neural Theorem Proving in Lean</b>
+<li><small>
+<p> Theorem proving is a fundamental task in mathematics. With the advent
+of large language models (LLMs) and interactive theorem provers (ITPs)
+like Lean, there has been growing interest in integrating LLMs and ITPs
+to automate theorem proving. In this approach, the LLM generates proof
+steps (tactics), and the ITP checks the applicability of the tactics at
+the current goal. The two systems work together to complete the proof.
+
+<p>In this talk, in the first half, I will discuss two recent advancements
+in the field of neural theorem proving: AlphaGeometry: Solving olympiad
+geometry without human demonstrations Graph2Tac: Learning hierarchical
+representations of math concepts in theorem proving
+
+<p>In the second half of the talk, I will discuss the progress of my
+work on neural theorem proving in Lean. This includes data augmentation,
+introduction of dynamic sampling methods, our public website for proving
+mathematical statements with its API usage, porting of standard datasets
+(ProofNet and MiniF2F) to Lean 4 to facilitate experiments in Lean 4,
+and the development of a new tokenizer for Lean to make the tactic
+generator model more efficient.
+</small>
+</ul>
+
+
+
+</ol>
+
+<h3>2023 Weekly Lab Talks at E2 from 0930-1030 every week.</h3>
+<ol>
+<li><strong>Rucha Bhalchandra Joshi</strong></li>
 <ul>
 <li>August 7th, 2023
 <li><b>End-to-end object detection with Transformers</b>
@@ -254,6 +385,25 @@ splatting and both accelerates training and allows realtime rendering.
 We demonstrate state-of-the-art visual quality and real-time rendering
 on several established datasets.</small>
 <li><a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">Link</a>
+
+</ul> <li><strong>Sagar Prakash Barad</strong></li> <ul>
+<li>November 6th, 2023
+<li><b>Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Network</b>
+<small>
+<li><p>Faster R-CNN is a unified end-to-end object detection network that
+significantly improved object detection by introducing the concept
+of a Region Proposal Network (RPN). The key idea behind it was to use
+the RPN to generate region proposals, which are essentially potential
+bounding boxes containing objects of interest, and the model then uses
+these initial proposals for further classification and refinement of
+the bounding boxes.The RPN itself is a fully convolutional network
+that performs two tasks simultaneously: predicting object bounds
+and objectness scores for each position. When trained end-to-end, the
+model becomes capable of producing high-quality region proposals, which
+are subsequently utilized by Fast R-CNN for object detection.Trained
+on datasets like PASCAL VOC and MS COCO, Faster R-CNN has shown its
+effectiveness in various object detection tasks.
+</small>
 
 </ol>
 		<h3>2022 - Paper Presentations</h3>
